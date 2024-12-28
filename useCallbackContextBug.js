@@ -1,0 +1,1 @@
+This error occurs when using the `useCallback` hook in React Native with a function that depends on a value from `useContext`.  If the context value changes, the callback will not update because useCallback is only memoizing based on the reference of the function, not the context value. This will lead to stale closures and unexpected behavior.
